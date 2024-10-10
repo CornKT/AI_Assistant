@@ -151,9 +151,9 @@ def Page():
         solara.lab.ChatInput(
                 send_callback=send, 
                 disabled=call_openai.pending,
-                style = {"bottom": "0","padding": "10px" ,"height":"20%","padding-bottom": "50px", "width": "100%"}
+                style = {"bottom": "0","padding": "10px" ,"height":"20%","padding-bottom": "50px", "width": "100%"},
             )            
 @solara.component
 def Layout(children):
     dark_effective = solara.lab.use_dark_effective()
-    return solara.AppLayout(children=children, toolbar_dark=dark_effective, color=None)  # if dark_effective else "primary")
+    return solara.AppLayout(children=children, toolbar_dark=dark_effective, color=None)
