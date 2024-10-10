@@ -1,0 +1,13 @@
+
+# pixi environments
+.pixi
+*.egg-info
+# Environments
+.env
+.venv
+.envrc
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/

@@ -1,0 +1,24 @@
+[project]
+name = "banking-va-solara"
+version = "0.1.0"
+requires-python = ">=3.11, <3.13"
+dependencies = ["astra-assistants>=2.1.4,<3"]
+
+# [build-system]
+# build-backend = "hatchling.build"
+# requires = ["hatchling"]
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["win-64"]
+
+[tool.pixi.pypi-dependencies]
+banking-va-solara = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+
+[tool.pixi.dependencies]
+solara = ">=1.39.0,<2"
+openai = ">=1.51.2,<2"
+matplotlib = ">=3.9.2,<4"
+pillow = ">=10.4.0,<11"
